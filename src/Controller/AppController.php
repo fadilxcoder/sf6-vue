@@ -15,9 +15,9 @@ class AppController extends AbstractController
         return $this->render('app/index.html.twig', []);
     }
 
-    #[Route('/api', name: 'api')]
-    public function api(): JsonResponse
+    #[Route('/api/say-my-name/{name}', name: 'api_say_my_name')]
+    public function api(string $name = 'fadilxcoder'): JsonResponse
     {
-        return new JsonResponse('hello fadilxcoder');
+        return new JsonResponse('hello ' . $name);
     }
 }

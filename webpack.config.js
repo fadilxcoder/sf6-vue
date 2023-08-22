@@ -57,7 +57,8 @@ Encore
     //.enableSassLoader()
 
     // uncomment if you use TypeScript
-    //.enableTypeScriptLoader()
+    .enableTypeScriptLoader()
+    .enableVueLoader(() => {}, { runtimeCompilerBuild: false })
 
     // uncomment if you use React
     //.enableReactPreset()
