@@ -1,0 +1,5 @@
+App\Entity\Post:
+    dummy_{1..10}:
+        title: '<username()>'
+        description: '<firstName()> <lastName()>'
+        createdAt: '<date_create()>'

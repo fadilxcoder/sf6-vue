@@ -1,0 +1,7 @@
+{% for post in posts %}
+<article>
+    <header>{{ post.title }}</header>
+    {{ post.description }}
+    <footer>{{ post.createdAt|date("m/d/Y") }}</footer>
+</article>
+{% endfor %}
